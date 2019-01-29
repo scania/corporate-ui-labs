@@ -11,7 +11,6 @@
 
 	<script src="https://static.scania.com/build/global/3.5.0/js/corporate-ui.js"></script>
 	<link rel="stylesheet" type="text/css" href="used-vehicles.css">
-	<link rel="stylesheet" type="text/css" href="https://legend.scania.com/development/users/used-vehicles/css/used-vehicles.css">
 
 	<script src="https://static.scania.com/vendors/components/pure-js/noUiSlider/12.1.0/src/nouislider.js"></script>
 	
@@ -55,13 +54,14 @@
 <style>
 	td {
 	    white-space: pre-line;
+	    vertical-align: top;
 	}
 </style>
 
 
 		<section>
 
-			<div class="container">
+			<div class="container-flex">
 				<div class="row">
 					<div class="col-md-6">
 						<div class="panel panel-default">
@@ -153,56 +153,86 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<a href="#">Contact Information</a>
-							<div>
-								<h2>Joakim J&ouml;nsson</h2>
-								<ul>
-									<li>
-										<div>Tel:</div>
-										<div>+46700869666</div>
-									</li>
-									<li>
-										<div>Mobile phone:</div>
-										<div>+46700869666</div>
-									</li>
-									<li>
-										<div>Fax:</div>
-										<div>010-706 69 01</div>
-									</li>
-									<li>
-										<div>Email:</div>
-										<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
-									</li>
-								</ul>
+						<div class="panel panel-default">
+							<div class="panel-body">
+							<a href="#">Contact Information</a>
 								<div>
-									<h2>The dealer: Scania Sverige AB V&auml;st</h2>
+									<h2>Joakim J&ouml;nsson</h2>
 									<ul>
 										<li>
 											<div>Tel:</div>
-											<div>+46 (0) 107 066 963</div>
+											<div>+46700869666</div>
+										</li>
+										<li>
+											<div>Mobile phone:</div>
+											<div>+46700869666</div>
 										</li>
 										<li>
 											<div>Fax:</div>
-											<div>+46 (0) 107 066 901</div>
+											<div>010-706 69 01</div>
 										</li>
 										<li>
 											<div>Email:</div>
 											<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
 										</li>
-										<li>
-											<div>Address:</div>
-											<div>Himle Tv&aring;&aring;ker, 43277 Himle, Himle, Sweden</div>
-										</li>
 									</ul>
 									<div>
-										<img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" alt="" />
+										<h2>The dealer: Scania Sverige AB V&auml;st</h2>
+										<ul>
+											<li>
+												<div>Tel:</div>
+												<div>+46 (0) 107 066 963</div>
+											</li>
+											<li>
+												<div>Fax:</div>
+												<div>+46 (0) 107 066 901</div>
+											</li>
+											<li>
+												<div>Email:</div>
+												<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
+											</li>
+											<li>
+												<div>Address:</div>
+												<div>Himle Tv&aring;&aring;ker, 43277 Himle, Himle, Sweden</div>
+											</li>
+										</ul>
+
+
+
+   <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
+
+
+
 									</div>
-									<div>
-										<div><img role="presentation" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i8753!3i5013!4i256!2m3!1e0!2sm!3i451159722!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyBnNm7TmuSw4eu8xLk5sGVOWm5Ch2WKv-8&amp;token=73176" alt="" /></div>
-										<div><img role="presentation" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i8754!3i5012!4i256!2m3!1e0!2sm!3i451159314!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyBnNm7TmuSw4eu8xLk5sGVOWm5Ch2WKv-8&amp;token=24196" alt="" /></div>
-									</div>
-								</div>
-							</div>																	
+								</div>	
+							</div>
+						</div>																	
 					</div>
 				</div>	
 			</div>								
