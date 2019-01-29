@@ -1,4 +1,17 @@
-	c-main-navigation .search.form-inline {
+  c-corporate-header .dropdown,
+  c-corporate-header .dropdown-toggle {
+      display: inline;
+  }
+
+  c-corporate-header .navbar-default .navbar-nav.navbar-right > .active > a {
+    background-color: transparent;
+  }  
+
+  .navbar-default .navbar-nav.navbar-right > .active > a {
+    background-color: transparent;
+  }
+
+  	c-main-navigation .search.form-inline {
 		margin-right: 40px;
 		margin-top: 5px;
 	}
