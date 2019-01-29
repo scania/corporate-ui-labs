@@ -10,6 +10,7 @@
 
 	<script src="https://static.scania.com/build/global/3.5.0/js/corporate-ui.js"></script>
 	<link rel="stylesheet" type="text/css" href="used-vehicles.css">
+
 	<link rel="import" href="https://static.scania.com/build/global/3.5.1/components/teaser/teaser.html">
 	<link rel="import" href="https://static.scania.com/build/global/3.5.1/components/tiled-display/tiled-display.html">
 
@@ -29,14 +30,14 @@
 	h2.item-headline.style-scope.teaser-item {
 		font-size: 2rem;
 	}
-	.no-gutters {
-		margin-right: 0;
-		margin-left: 0;
+
+	.dropdown,
+	.dropdown-toggle {
+	    display: inline;
 	}
-	.no-gutters > .col,
-	.no-gutters > [class*="col-"] {
-		padding-right: 0;
-		padding-left: 0;
+
+	.navbar-default .navbar-nav.navbar-right > .active > a {
+		background-color: transparent;
 	}
 
 </style>
@@ -45,7 +46,18 @@
 <body class="scania app used-vehicles">
 	<c-corporate-header site-name="Used Vehicles" short-name="Used Vehicles" site-url="/">
 		<nav-item><a href="index.html">Optional</a></nav-item>
-		<nav-item location="#">User Menu</nav-item>
+		<nav-item location="#">
+	        <div class="dropdown">
+	          <div role="button" class="dropdown-toggle" data-toggle="dropdown">
+	            <span>EN</span>
+	          </div>  
+	          <ul class="dropdown-menu" aria-labelledby="myDropdown">
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SE</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NO</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GR</a></li>
+	          </ul>
+	        </div>
+		</nav-item>
 	</c-corporate-header>
 
 	<c-main-content class="light">

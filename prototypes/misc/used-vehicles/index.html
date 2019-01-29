@@ -20,7 +20,7 @@
 <style>
 
 	i.scania-icon-search.neg {
-	    background-image: url(https://d31jnweo1ynb8u.cloudfront.net/resources/icons/scania/SVG_NEG/02_Icon_search-54-72px_neg.svg);
+	    background-image: url(https://static.scania.com/resources/icons/scania/SVG_NEG/02_Icon_search-54-72px_neg.svg);
 	    width: 200px;
 	    height: 190px;
 	    background-size: 200px;
@@ -30,23 +30,24 @@
 	h2.item-headline.style-scope.teaser-item {
 		font-size: 2rem;
 	}
-	.no-gutters {
-		margin-right: 0;
-		margin-left: 0;
-	}
-	.no-gutters > .col,
-	.no-gutters > [class*="col-"] {
-		padding-right: 0;
-		padding-left: 0;
-	}
-
 </style>
 
 
 <body data-env="Test" class="scania app used-vehicles">
 	<c-corporate-header site-name="Used Vehicles" short-name="Used Vehicles" site-url="/">
 		<nav-item><a href="index.html">Optional</a></nav-item>
-		<nav-item location="#">User Menu</nav-item>
+		<nav-item location="#">
+	        <div class="dropdown">
+	          <div role="button" class="dropdown-toggle" data-toggle="dropdown">
+	            <div>EN</div>
+	          </div>  
+	          <ul class="dropdown-menu" aria-labelledby="myDropdown">
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SE</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NO</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GR</a></li>
+	          </ul>
+	        </div>
+		</nav-item>
 	</c-corporate-header>
 
 	<c-main-content class="light">
