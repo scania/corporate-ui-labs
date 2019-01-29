@@ -17,8 +17,29 @@
 
 <body class="scania app used-vehicles">
 	<c-corporate-header site-name="Used Vehicles" short-name="Used Vehicles" site-url="/">
-		<nav-item location="#">Optional</nav-item>
-		<nav-item location="#">User Menu</nav-item>
+		<nav-item location="#">
+	        <div class="dropdown">
+	          <div role="button" class="dropdown-toggle" data-toggle="dropdown">
+	            <span>$ <i class="fal fa-angle-down"></i></span>
+	          </div>  
+	          <ul class="dropdown-menu" aria-labelledby="myDropdown">
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">$</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">£</a></li>
+	          </ul>
+	        </div>
+		</nav-item>
+		<nav-item location="#">
+	        <div class="dropdown">
+	          <div role="button" class="dropdown-toggle" data-toggle="dropdown">
+	            <span>EN <i class="fal fa-angle-down"></i></span>
+	          </div>  
+	          <ul class="dropdown-menu" aria-labelledby="myDropdown">
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SE</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NO</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GR</a></li>
+	          </ul>
+	        </div>
+		</nav-item>
 	</c-corporate-header>
 
 	<c-main-content class="light">
