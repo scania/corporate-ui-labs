@@ -23,7 +23,7 @@
 		<nav-item location="#">User Menu</nav-item>
 	</c-corporate-header>
 
-	<c-main-content class="light">
+	<c-main-content>
 		<c-main-navigation>
 			<primary-items>
 				<nav-item><a routerLink="/">Tractors</a></nav-item>
@@ -51,97 +51,159 @@
 			</a>
 		</div>
 
+
+<style>
+	td {
+	    white-space: pre-line;
+	}
+</style>
+
+
 		<section>
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<img src="https://scania.github.io/corporate-ui-docs/developer/img/17301-016.jpg" class="img-responsive">
-						<table class="table table-sm table-striped">
-							<thead>
-							  <tr>
-						        <td colspan="2">General</td>
-						      </tr>
-							</thead>						      
-						    <tbody>
-						      <tr>
-						        <td>First registration date:</td>
-						        <td>2016-12-21</td>
-						      </tr>
-						      <tr>
-						        <td>Registration number:</td>
-						        <td>RHZ651</td>
-						      </tr>
-						      <tr>
-						        <td>Last inspection date:</td>
-						        <td>2019-01-18</td>
-						      </tr>
-						      <tr>
-						        <td>Scania Approved:</td>
-						        <td>No</td>
-						      </tr>
-							<thead>
-							  <tr>
-						        <td colspan="2">Technical</td>
-						      </tr>
-							</thead>						      
-						      <tr>
-						        <td>Engine:</td>
-						        <td>450 Hp</td>
-						      </tr>
-						      <tr>
-						        <td>Emission:</td>
-						        <td>Euro 6 DPF</td>
-						      </tr>
-						      <tr>
-						        <td>Gearbox:</td>
-						        <td>opticruise</td>
-						      </tr>
-						      <tr>
-						        <td>Rear axle:</td>
-						        <td>ratio 0</td>
-						      </tr>
-						      <tr>
-						        <td>Cab:</td>
-						        <td>Topline, Sleeper, Left Hand Drive</td>
-						      </tr>
-						      <tr>
-						        <td>Wheel base:</td>
-						        <td>3100 mm</td>
-						      </tr>
-						      <tr>
-						        <td>Bogie weight:</td>
-						        <td>0 kg</td>
-						      </tr>
-						      <tr>
-						        <td>Gross vehicle weight:</td>
-						        <td>0 kg</td>
-						      </tr>
-						      <tr>
-						        <td>Payload:</td>
-						        <td>0 kg</td>
-						      </tr>
-						      <tr>
-						        <td>Tyres tread (mm):</td>
-						        <td>1st axle: 0/0&nbsp;&nbsp;&nbsp;2nd axle: 0/0&nbsp;&nbsp;&nbsp;3rd axle:
-						        0/0&nbsp;&nbsp;&nbsp;4th axle: 0/0&nbsp;&nbsp;&nbsp;5th axle: 0/0</td>
-						      </tr>
-						      <tr>
-						        <td>Extras:</td>
-						        <td>Tank volume 0 litres</td>
-						      </tr>
-						      <tr>
-						        <td>Comments:</td>
-						        <td>2-pedals Opticruise. Retarder. Hel luftfj&auml;drad. Stora v&auml;rmaren.
-						        Stora stereon. Alkol&aring;s. Kaffebryggare. Micro. Kylsk&aring;p. ADR-FL. Nato
-						        uttag. Skjutbar v&auml;ndskiva. Rostfril&aring;da innanf&ouml;r sidokjol h.sida.
-						        G&aring;tt p&aring; Gr&ouml;nt kort.</td>
-						      </tr>
-						    </tbody>
-						</table>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<img src="https://scania.github.io/corporate-ui-docs/developer/img/17301-016.jpg" class="img-responsive">
+								<table class="table table-sm table-striped">
+									<thead>
+									  <tr>
+								        <td colspan="2">General</td>
+								      </tr>
+									</thead>						      
+								    <tbody>
+								      <tr>
+								        <td>First registration date:</td>
+								        <td>2016-12-21</td>
+								      </tr>
+								      <tr>
+								        <td>Registration number:</td>
+								        <td>RHZ651</td>
+								      </tr>
+								      <tr>
+								        <td>Last inspection date:</td>
+								        <td>2019-01-18</td>
+								      </tr>
+								      <tr>
+								        <td>Scania Approved:</td>
+								        <td>No</td>
+								      </tr>
+									<thead>
+									  <tr>
+								        <td colspan="2">Technical</td>
+								      </tr>
+									</thead>						      
+								      <tr>
+								        <td>Engine:</td>
+								        <td>450 Hp</td>
+								      </tr>
+								      <tr>
+								        <td>Emission:</td>
+								        <td>Euro 6 DPF</td>
+								      </tr>
+								      <tr>
+								        <td>Gearbox:</td>
+								        <td>opticruise</td>
+								      </tr>
+								      <tr>
+								        <td>Rear axle:</td>
+								        <td>ratio 0</td>
+								      </tr>
+								      <tr>
+								        <td>Cab:</td>
+								        <td>Topline, Sleeper, Left Hand Drive</td>
+								      </tr>
+								      <tr>
+								        <td>Wheel base:</td>
+								        <td>3100 mm</td>
+								      </tr>
+								      <tr>
+								        <td>Bogie weight:</td>
+								        <td>0 kg</td>
+								      </tr>
+								      <tr>
+								        <td>Gross vehicle weight:</td>
+								        <td>0 kg</td>
+								      </tr>
+								      <tr>
+								        <td>Payload:</td>
+								        <td>0 kg</td>
+								      </tr>
+								      <tr>
+								        <td>Tyres tread (mm):</td>
+								        <td>1st axle: 0/0&nbsp;&nbsp;&nbsp;2nd axle: 0/0&nbsp;&nbsp;&nbsp;3rd axle:
+								        0/0&nbsp;&nbsp;&nbsp;4th axle: 0/0&nbsp;&nbsp;&nbsp;5th axle: 0/0</td>
+								      </tr>
+								      <tr>
+								        <td>Extras:</td>
+								        <td>Tank volume 0 litres</td>
+								      </tr>
+								      <tr>
+								        <td>Comments:</td>
+								        <td>2-pedals Opticruise. Retarder. Hel luftfj&auml;drad. Stora v&auml;rmaren.
+								        Stora stereon. Alkol&aring;s. Kaffebryggare. Micro. Kylsk&aring;p. ADR-FL. Nato
+								        uttag. Skjutbar v&auml;ndskiva. Rostfril&aring;da innanf&ouml;r sidokjol h.sida.
+								        G&aring;tt p&aring; Gr&ouml;nt kort.</td>
+								      </tr>
+								    </tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-6">
 						
+						<a href="#">Contact Information</a>
+							<div>
+								<h2>Joakim J&ouml;nsson</h2>
+								<ul>
+									<li>
+										<div>Tel:</div>
+										<div>+46700869666</div>
+									</li>
+									<li>
+										<div>Mobile phone:</div>
+										<div>+46700869666</div>
+									</li>
+									<li>
+										<div>Fax:</div>
+										<div>010-706 69 01</div>
+									</li>
+									<li>
+										<div>Email:</div>
+										<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
+									</li>
+								</ul>
+								<div>
+									<h2>The dealer: Scania Sverige AB V&auml;st</h2>
+									<ul>
+										<li>
+											<div>Tel:</div>
+											<div>+46 (0) 107 066 963</div>
+										</li>
+										<li>
+											<div>Fax:</div>
+											<div>+46 (0) 107 066 901</div>
+										</li>
+										<li>
+											<div>Email:</div>
+											<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
+										</li>
+										<li>
+											<div>Address:</div>
+											<div>Himle Tv&aring;&aring;ker, 43277 Himle, Himle, Sweden</div>
+										</li>
+									</ul>
+									<div>
+										<img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" alt="" />
+									</div>
+									<div>
+										<div><img role="presentation" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i8753!3i5013!4i256!2m3!1e0!2sm!3i451159722!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyBnNm7TmuSw4eu8xLk5sGVOWm5Ch2WKv-8&amp;token=73176" alt="" /></div>
+										<div><img role="presentation" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i8754!3i5012!4i256!2m3!1e0!2sm!3i451159314!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyBnNm7TmuSw4eu8xLk5sGVOWm5Ch2WKv-8&amp;token=24196" alt="" /></div>
+									</div>
+								</div>
+							</div>																	
 					</div>
 				</div>	
 			</div>								
@@ -160,8 +222,6 @@
 	  <nav-item location="#">Cookies</nav-item>
 	  <nav-item location="#">Contact us</nav-item>  
 	</c-corporate-footer>
-
-
 
 			<div class="modal fade bs-example-modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-fullscreen">
