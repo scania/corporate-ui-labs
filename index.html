@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta charset="utf-8">
+	<noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+    <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script>
+    <script src="https://static.scania.com/vendors/frameworks/jQuery/1.11.3/jquery-1.11.3.min.js"></script> 
+	<title>Scania Used Vehicles</title>
+
+	<script src="https://static.scania.com/build/global/3.5.0/js/corporate-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="used-vehicles.css">
+
+	<link rel="import" href="https://static.scania.com/build/global/3.5.1/components/teaser/teaser.html">
+	<link rel="import" href="https://static.scania.com/build/global/3.5.1/components/tiled-display/tiled-display.html">
+
+</head>
+
+
+<style>
+
+	i.scania-icon-search.neg {
+	    background-image: url(https://d31jnweo1ynb8u.cloudfront.net/resources/icons/scania/SVG_NEG/02_Icon_search-54-72px_neg.svg);
+	    width: 200px;
+	    height: 190px;
+	    background-size: 200px;
+	}
+
+
+	h2.item-headline.style-scope.teaser-item {
+		font-size: 2rem;
+	}
+
+</style>
+
+
+<body class="scania app used-vehicles">
+	<c-corporate-header site-name="CUI Labs" short-name="Labs" site-url="/">
+
+	</c-corporate-header>
+
+	<c-main-content class="light">
+
+
+		<c-main-hero class="public" image="/images/ux-splash.png">
+		    <h1>Corporate UI Labs</h1>
+		    <p>This is an area only for sketches, prototypes and great ideas!</p>
+		</c-main-hero>
+
+		<section class="public">
+			<div class="container">
+				<c-teaser class="" variation="2" headline="Tailored for you" description="This prototype and HTML templates contains a few pages and a few things worth pointing out.">
+					<teaser-item headline="Listing Page" image="https://static.scania.com/resources/images/demo/modules.jpg" onclick="document.location='used-vehicles.html'" style="cursor:pointer;"></teaser-item>
+					<teaser-item headline="Details Page" image="https://static.scania.com/resources/images/demo/tailored.jpg" onclick="document.location='used-vehicle.html'" style="cursor:pointer;"></teaser-item>
+					<teaser-item headline="Landing Page" image="https://static.scania.com/resources/images/demo/finance.jpg" onclick="document.location='index.html'" style="cursor:pointer;"></teaser-item>
+					<teaser-item headline="Old Site" image="https://static.scania.com/resources/images/demo/personalized.jpg"  onclick="document.location='https://used.scania.com/'" style="cursor:pointer;"></teaser-item>
+				</c-teaser>	
+			</div>
+		</section>
+
+	</c-main-content>	
+
+	<c-corporate-footer></c-corporate-footer>
+
+	<c-cookie-message name="cookieMessage" text="hideMessage" path=".scania.github.io"></c-cookie-message>
+
+</body>
+</html>
