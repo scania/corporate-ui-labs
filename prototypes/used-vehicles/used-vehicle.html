@@ -74,7 +74,7 @@
 
 <style>
 
-	.app .table thead > tr > td {
+/*	.app .table thead > tr > td {
 	    font-family: 'Scania Sans Headline';
 	    padding: 12px 10px 8px;
 	}
@@ -82,7 +82,14 @@
 	.app .table tbody > tr > td {
 	    white-space: pre-line;
 	    vertical-align: top;
+	}*/
+
+	.app .page-header h1 {
+    font-size: 2.6rem;
+    text-align: left;
 	}
+
+
 
 </style>
 
@@ -93,9 +100,11 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="panel panel-default">
-							<div class="panel-body">
-								<h2>SCANIA R450 LA6X2*2MNB</h2>
-								<div>
+							<div class="panel-body article">
+								<div class="public page-header">
+									<h1>SCANIA R450 LA6X2*2MNB</h1>
+								</div>
+<!-- 								<div>
 									<ul>
 										<ul>
 											<li>ID: <strong>5449310</strong></li>
@@ -119,7 +128,9 @@
 											<li>Price: <strong>- SEK</strong></li>
 										</ul>
 									</div>
-								</div>
+								</div> -->
+								<img src="/corporate-ui-labs/images/truck-and-sand.jpg" class="img-responsive">
+
 								<div>
 									<div>This vehicle is reserved.<a href="#">Contact the dealer</a> for more information.</div>
 									<div>Make me an offer</div>
@@ -135,8 +146,51 @@
 											</div>
 										</li>
 									</ul>
-								</div>							
-								<img src="https://scania.github.io/corporate-ui-docs/developer/img/17301-016.jpg" class="img-responsive">
+
+
+
+								
+								<H3>Contact the sales team</h3>
+									<div>
+									
+									<h3>Joakim J&ouml;nsson</h3>
+									<div>+46700869666</div>
+									<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
+
+									<img src="/corporate-ui-labs/images/google-maps-fake.jpg" class="img-responsive">
+									<div>
+											<h2>The dealer: Scania Sverige AB V&auml;st</h2>
+											<ul>
+												<li>
+													<div>Tel:</div>
+													<div>+46 (0) 107 066 963</div>
+												</li>
+												<li>
+													<div>Fax:</div>
+													<div>+46 (0) 107 066 901</div>
+												</li>
+												<li>
+													<div>Email:</div>
+													<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
+												</li>
+												<li>
+													<div>Address:</div>
+													<div>Himle Tv&aring;&aring;ker, 43277 Himle, Himle, Sweden</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-body">
+
+
+
+																
 								<table class="table table-striped mt-3">
 									<thead>
 									  <tr>
@@ -219,87 +273,8 @@
 								      </tr>
 								    </tbody>
 								</table>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="panel-body">
-							<a href="#">Contact Information</a>
-								<div>
-									<h2>Joakim J&ouml;nsson</h2>
-									<ul>
-										<li>
-											<div>Tel:</div>
-											<div>+46700869666</div>
-										</li>
-										<li>
-											<div>Mobile phone:</div>
-											<div>+46700869666</div>
-										</li>
-										<li>
-											<div>Fax:</div>
-											<div>010-706 69 01</div>
-										</li>
-										<li>
-											<div>Email:</div>
-											<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
-										</li>
-									</ul>
-									<div>
-										<h2>The dealer: Scania Sverige AB V&auml;st</h2>
-										<ul>
-											<li>
-												<div>Tel:</div>
-												<div>+46 (0) 107 066 963</div>
-											</li>
-											<li>
-												<div>Fax:</div>
-												<div>+46 (0) 107 066 901</div>
-											</li>
-											<li>
-												<div>Email:</div>
-												<div><a href="#" data-contactemail="joakim.jonsson@scania.com">joakim.jonsson@scania.com</a></div>
-											</li>
-											<li>
-												<div>Address:</div>
-												<div>Himle Tv&aring;&aring;ker, 43277 Himle, Himle, Sweden</div>
-											</li>
-										</ul>
 
 
-
-   <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    async defer></script>
-
-
-
-									</div>
 								</div>	
 							</div>
 						</div>																	
