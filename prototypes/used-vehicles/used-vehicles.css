@@ -578,30 +578,204 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
+/*
+Bootstrap 4 temporary CSS*/
 
 
+.modal .scroll-y .modal-body {
+    max-height: calc(100vh - 350px);
+    overflow-y: auto;
+    margin-right: 3%;
+    padding: 0 25px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
+.text-justify {
+  text-align: justify !important;
+}
 
-c-cookie-message a,
-c-cookie-message a:hover,
-c-cookie-message a:focus {color: inherit; font-weight: bold;}
+.text-nowrap {
+  white-space: nowrap !important;
+}
 
-@media (max-width: 991px) {
-  c-cookie-message {
-    font-size: 1.4rem;
-    padding: 15px;
-    z-index: 9000;
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
   }
-  c-cookie-message .text-cookie.c-cookie-message {
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+  .text-xl-right {
+    text-align: right !important;
+  }
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-italic {
+  font-style: italic !important;
+}
+
+
+
+
+/*
+Details page temporary CSS*/
+
+  .app.used-vehicles .page-header {
+      margin: 0;
+  }
+
+  .app.used-vehicles .page-header h1 {
+    font-family: 'Scania Sans Headline';
+      font-size: 2.2rem;
+      letter-spacing: 0.03rem;
+      text-align: left;
+      margin: 0;
+  }
+
+  .app.used-vehicles .text-success {
+      color: #44a878;
+      font-family: 'Scania Sans';
+      font-size: 2rem;
+      letter-spacing: 0.03rem;
+      text-align: left;
+      margin: 14px 0 0 0;
+      font-weight: bold;
+  }
+
+  .app.used-vehicles  .table.table-sm > tbody > tr > td {
+      font-size: 1.2rem;
+      white-space: pre-line;
+      vertical-align: top;
+  }
+
+  .app.used-vehicles h4 {
+      text-transform: uppercase;
+      padding: 0 0 5px 0;
+      margin-top: 0;
+      font-family: "Scania Sans";
+  }
+
+  .app.used-vehicles .table thead + tbody + thead h4 {
+      text-transform: uppercase;
+      padding: 0 0 5px 0;
+      margin-top: 2rem;
+  } 
+
+  .app.used-vehicles p {
+      margin-bottom: 0px;
+  }
+
+  .app.used-vehicles .user-profile.user-menu {
+      padding: 8px;
+      background: transparent;
+      float: none;
+      overflow: hidden;
+      cursor: pointer;
       width: 100%;
+      color: #53565a;
+      font-size: 12px;
   }
 
-  c-cookie-message span.btn.btn-transparent,
-  c-cookie-message .cookie-short-message .btn {
-      margin: 12px 0px 0 5px;
-      padding: 6px 18px;
-      width: 100%;
+  .app.used-vehicles .user-profile.user-menu .user-profile-picture {
+      width: 46px;
+      height: 46px;
+      border: 1px solid #53565a;
+      font-size: 16px;
+      box-sizing: border-box;
+      padding: 10px 10px 0;
+      background: #fff;
+      background-size: 46px;
+      border-radius: 50%;
+      vertical-align: middle;
+      text-align: center;
+      background-position: center center;
+      float: left;
+      margin-right: 10px;
   }
-} 
+
+  .user span {font-weight: bold}
+
 
