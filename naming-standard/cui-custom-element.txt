@@ -5,7 +5,9 @@
 	<meta charset="utf-8">
 	<noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
     <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script>
+
 	<title>Corporate UI 4.0.0</title>
+	
 	<script src="https://static.scania.com/build/global/4.0.0/js/corporate-ui.js"></script>
 </head>
 
@@ -122,6 +124,6 @@
 	</cui-corporate-footer>
 
 	<cui-cookie-message name="cookieMessage" text="hideMessage" path="/"></cui-cookie-message>
-	
+
 </body>
 </html>

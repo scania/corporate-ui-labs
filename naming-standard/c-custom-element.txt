@@ -16,24 +16,6 @@
 
 </head>
 
-
-<style>
-
-	i.scania-icon-search.neg {
-	    background-image: url(https://d31jnweo1ynb8u.cloudfront.net/resources/icons/scania/SVG_NEG/02_Icon_search-54-72px_neg.svg);
-	    width: 200px;
-	    height: 190px;
-	    background-size: 200px;
-	}
-
-
-	h2.item-headline.style-scope.teaser-item {
-		font-size: 2rem;
-	}
-
-</style>
-
-
 <body class="scania app used-vehicles">
 	<c-corporate-header site-name="Used Vehicles" short-name="Used Vehicles" site-url="/">
 		<nav-item location="#">
@@ -148,5 +130,23 @@
 	</c-corporate-footer>
 
 	<c-cookie-message name="cookieMessage" text="hideMessage" path="/"></c-cookie-message>
+
+
+	<style>
+
+		i.scania-icon-search.neg {
+		    background-image: url(https://d31jnweo1ynb8u.cloudfront.net/resources/icons/scania/SVG_NEG/02_Icon_search-54-72px_neg.svg);
+		    width: 200px;
+		    height: 190px;
+		    background-size: 200px;
+		}
+
+
+		h2.item-headline.style-scope.teaser-item {
+			font-size: 2rem;
+		}
+
+	</style>
+
 </body>
 </html>
