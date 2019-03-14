@@ -179,7 +179,12 @@
 						<div class="col-md-10">										
 							<div class="card-deck">
 								<div class="card">
-									<img class="card-img-top" src="https://scania.github.io/corporate-ui-docs/developer/img/17301-016.jpg" alt="">
+									<style>
+										.card-img-top {object-fit: cover; height: 15rem}
+									</style>
+
+
+									<img class="card-img-top" src="img/17301-016-b.jpg" alt="">
 									<div class="card-body">
 										<h4>Volvo</h4>			
 										<h3><a href="">R 490 LA6x2/4MNB</a></h3>		
@@ -630,5 +635,8 @@ nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isT
     margin-bottom: 20px;
 }
 </style>
+
+<script src="http://static.scania.com/vendors/polyfills/modernizr/custom-builds/1.0.0/modernizr-custom-min.js"></script>
+
 </body>
 </html>
