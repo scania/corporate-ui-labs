@@ -22,21 +22,19 @@
 
 <body class="scania app">
 
-<c-theme name="scania"></c-theme>
+  <c-theme name="scania"></c-theme>
 
-<c-header
-  site-name='Get Started'>
-  <a href="https://scania.github.io/corporate-ui-docs/" slot="items">UX Library</a>
-  <c-navigation slot="navigation">
-    <a href="/" slot="primary-items">home</a>
-    <a href="/about" slot="primary-items">about</a>
-    <a href="/user" slot="secondary-items">user</a>
-  </c-navigation>
-</c-header>
+  <c-header
+    site-name='Get Started'>
+    <a href="https://scania.github.io/corporate-ui-docs/" slot="items">UX Library</a>
+    <c-navigation slot="navigation">
+      <a href="/" slot="primary-items">home</a>
+      <a href="/about" slot="primary-items">about</a>
+      <a href="/user" slot="secondary-items">user</a>
+    </c-navigation>
+  </c-header>
 
-
-
-
+  <c-content>
         <main>
           <section>
             <c-container type="fluid">
@@ -52,10 +50,6 @@
                     </c-card>
                   </c-column>
               </c-row>
-            </c-container>
-          </section>
-        </main>
-
 
 
   <section class="light">
@@ -643,19 +637,16 @@
     </div>
   </div>
 
+        </c-container>
+      </section>
+    </main>
+  </c-content>
 
+  <c-footer>
+    <a href="/cookies" slot="items">Cookies</a>
+    <a href="/contact-us" slot="items">Contact us</a>
+  </c-footer>
 
-
-
-<c-footer>
-  <a href="/cookies" slot="items">Cookies</a>
-  <a href="/contact-us" slot="items">Contact us</a>
-</c-footer>
-
- 
-</div>
-</article>
-</section>  
   
 </body>
 </html>
