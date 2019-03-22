@@ -22,34 +22,18 @@
 
 <body class="scania app">
 
-<c-header site-name="UX Library" site-url="https://scania.github.io/corporate-ui-docs/">
-  <a href="https://scania.github.io/corporate-ui-docs/developer/support.html">Support</a>
-  <a location="https://github.com/scania/corporate-ui">GitHub</a>
+
+<c-header
+  site-name='Get Started'>
+  <a href="https://scania.github.io/corporate-ui-docs/" slot="items">UX Library</a>
+  <c-navigation slot="navigation">
+    <a href="/" slot="primary-items">home</a>
+    <a href="/about" slot="primary-items">about</a>
+    <a href="/user" slot="secondary-items">user</a>
+  </c-navigation>
 </c-header>
 
-<c-main-navigation>
-  <primary-items>
-    <nav-item location="https://scania.github.io/corporate-ui-docs/">Home</nav-item>
-    <nav-item location="https://scania.github.io/corporate-ui-docs/styleguide/">Style Guide
-      <sub-navigation caption="Style Guide">
-        <nav-item location="https://scania.github.io/corporate-ui-docs/logotype/">Logotype</nav-item>
-        <nav-item location="https://scania.github.io/corporate-ui-docs/icons/">Icons</nav-item>
-        <nav-item location="https://scania.github.io/corporate-ui-docs/colours/">Colours</nav-item>
-        <nav-item location="https://scania.github.io/corporate-ui-docs/typography/">Typography</nav-item>
-      </sub-navigation>
-    </nav-item>          
-    <nav-item location="https://scania.github.io/corporate-ui-docs/developer/" class="active">Web Applications
-      <sub-navigation caption="Web Applications">
-        <nav-item location="https://scania.github.io/corporate-ui-docs/developer/">Corporate UI</nav-item>
-        <nav-item location="https://scania.github.io/corporate-ui-docs/developer/corporate-ui-for-frameworks.html">JS Frameworks</nav-item>   
-        <nav-item location="https://scania.github.io/corporate-ui-docs/developer/bootstrap-original-docs.html" class="active">Scania Bootstrap</nav-item>
-        <nav-item location="https://scania.github.io/corporate-ui-docs/developer/support.html">Support</nav-item>
-      </sub-navigation>
-    </nav-item>
-    <nav-item location="https://scania.github.io/corporate-ui-docs/mobile-apps/">Mobile Apps</nav-item>
-  </primary-items>
-  <secondary-items></secondary-items>
-</c-main-navigation>
+
 
 
         <main>
@@ -662,7 +646,10 @@
 
 
 
-<c-footer></c-footer> 
+<c-footer>
+  <a href="/cookies" slot="items">Cookies</a>
+  <a href="/contact-us" slot="items">Contact us</a>
+</c-footer>
 
  
 </div>
