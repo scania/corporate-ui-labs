@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+  />
+  <noscript><meta http-equiv="refresh" content="0;url=https://static.scania.com/vendors/components/pure-js/nonJS-browsers/1.0.0/nonJS-browsers.html"></noscript>
+  <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script>
+
+  <title>Corporate UI - FAQ</title>
+  <script src="https://static.scania.com/build/global/4.0.0-alpha.2/corporate-ui.js"></script>
+
+  <link rel="stylesheet" href="https://legend.scania.com/resources/icons/font-awesome/5.3.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://static.scania.com/vendors/frameworks/bootstrap/3.2.0/dist/css/bootstrap-org.css">
+  <link rel="stylesheet" href="https://static.scania.com/build/global/3.5.2/css/corporate-ui.css">
+
+  <link rel="stylesheet" href="https://scania.github.io/corporate-ui-docs/developer/css/scania-bootstrap-docs.css">
+
+  <style>
+
+    body {height: auto}
+
+    section {
+      padding-top: 30px;
+      padding-bottom: 30px;      
+    }
+
+    div[type="faq"].panel-group  {
+        margin-top: 30px;
+    }    
+
+    div[type="faq"].panel-group .panel {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0;
+        padding: 24px 0;
+    }
+
+    div[type="faq"].panel-group {
+        margin-bottom: 20px;
+        border-top: 1px solid #ddd;
+    }
+
+    div[type="faq"].panel-group .panel .panel-heading {
+        border: none;
+        background: #0000;
+        padding-left: 0;  
+    }
+
+    div[type="faq"].panel-group .panel-title > a {
+        padding: 10px 0;
+    }
+
+    div[type="faq"].panel-group .panel-title > a:hover,
+    div[type="faq"].panel-group .panel-title > a:focus {
+        padding: 10px 0;
+        text-decoration: none;
+    }
+
+    div[type="faq"].panel-group .panel .panel-heading i {
+        font-size: 22px;
+    }
+
+    div[type="faq"].panel-group .panel-body p:last-child {
+      margin-bottom: 4px;
+    }
+
+    div[type="faq"].panel-group .panel + .panel {
+        margin-top: 0;
+    }    
+
+    div[type="faq"].panel-group .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #0000;
+        padding: 16px 0 10px;
+    }
+
+    div[type="faq"].panel-group a[data-toggle="collapse"]::before {
+        content: "\f106";
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        font-size: 30px;
+        float: right;
+        color: #041e42;
+        margin-top: -8px;
+        transform:rotate(0deg);
+        /* Standard */
+        transition: all 0.5s ease;
+        /* Firefox */
+        -moz-transition: all 0.5s ease;
+        /* WebKit */
+        -webkit-transition: all 0.5s ease;
+        /* Opera */
+        -o-transition: all 0.5s ease;
+
+
+    }
+
+    div[type="faq"].panel-group a[data-toggle="collapse"].collapsed::before {
+        transform:rotate(180deg);
+    }
+
+
+
+  </style>
+
+</head>
+
+
+
+
+<body class="scania app">
+
+  <c-theme name="scania"></c-theme>
+
+  <c-header
+    site-name="Corporate UI - FAQ"
+    top-items='[{"text":"Ver 3.5.2", "location": "https://scania.github.io/corporate-ui-docs/developer/bootstrap-original-docs.html"}]'></c-header>
+
+  <c-content>
+    <section>
+        <div class="container">
+        <article>
+          <h2>Frequently Asked Questions - Demo</h2>
+
+          <!-- accordion template -->
+          <div class="panel-group" type="faq" id="faqAccordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Where can I find specification about Scania Data Access APIs?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p>Please read the following documentation for all the details you want to to know about FMP APIs and Tachograph APIs.
+                    
+                    FMS APIs
+
+                  Tachograph APIs</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is the difference between Scania Data Access User and Scania Developer Portal User?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Collapse CONTENT 2
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What coding conventions are you using for Corporate UI?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <p>We think that it's important to share common standards within a company. Therefore we've done some research and the standards we're using when coding are published here:</p>
+                  <p><a class="btn-info btn-link" href="https://github.com/scania/coding-conventions/" target="_blank">https://github.com/scania/coding-conventions/</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>  
+  </c-content>
+  <c-footer></c-footer>
+
+  <script src="https://static.scania.com/vendors/frameworks/bootstrap.native/2.0.21/dist/bootstrap-native.min.js"></script>
+
+
+  </body>
+</html>
