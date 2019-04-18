@@ -29,20 +29,35 @@
       padding-bottom: 30px;      
     }
 
-    div[type="faq"].panel-group  {
-        margin-top: 30px;
+    div[type="faq"].panel-group h2 {
+        margin-bottom: 30px;
+    }
+
+    div[type="faq"].panel-group h2 a.btn {
+        float: right;
+        margin-top: -8px;
+        letter-spacing: normal;
     }    
+
+    div[type="faq"].panel-group {
+        margin-bottom: 20px;
+    }
 
     div[type="faq"].panel-group .panel {
         border: none;
         border-bottom: 1px solid #ddd;
         border-radius: 0;
-        padding: 24px 0;
+        padding: 10px 0 14px 0;
     }
 
-    div[type="faq"].panel-group {
-        margin-bottom: 20px;
+    div[type="faq"].panel-group > h2 + div.panel {
         border-top: 1px solid #ddd;
+    }
+
+    div[type="faq"].panel-group > h2,
+    div[type="faq"].panel-group .panel .panel-heading,
+    div[type="faq"].panel-group .panel .panel-body {
+      margin-left: 10px;
     }
 
     div[type="faq"].panel-group .panel .panel-heading {
@@ -53,6 +68,7 @@
 
     div[type="faq"].panel-group .panel-title > a {
         padding: 10px 0;
+        display: block;
     }
 
     div[type="faq"].panel-group .panel-title > a:hover,
@@ -66,7 +82,7 @@
     }
 
     div[type="faq"].panel-group .panel-body p:last-child {
-      margin-bottom: 4px;
+        margin-bottom: 4px;
     }
 
     div[type="faq"].panel-group .panel + .panel {
@@ -75,7 +91,7 @@
 
     div[type="faq"].panel-group .panel-default > .panel-heading + .panel-collapse > .panel-body {
         border-top-color: #0000;
-        padding: 16px 0 10px;
+        padding: 0 0 20px 0px;
     }
 
     div[type="faq"].panel-group a[data-toggle="collapse"]::before {
@@ -95,14 +111,21 @@
         -webkit-transition: all 0.5s ease;
         /* Opera */
         -o-transition: all 0.5s ease;
-
-
     }
 
     div[type="faq"].panel-group a[data-toggle="collapse"].collapsed::before {
         transform:rotate(180deg);
     }
 
+
+
+
+    article p a,
+    p a {
+        font-family: inherit;
+        font-weight: bold;
+        color: #4a8ba4;
+    }
 
 
   </style>
@@ -117,32 +140,34 @@
   <c-theme name="scania"></c-theme>
 
   <c-header
-    site-name="Corporate UI - FAQ"
+    site-name="UX Library"
     top-items='[{"text":"Ver 3.5.2", "location": "https://scania.github.io/corporate-ui-docs/developer/bootstrap-original-docs.html"}]'></c-header>
 
   <c-content>
     <section>
         <div class="container">
         <article>
-          <h2>Frequently Asked Questions - Demo</h2>
+          
 
           <!-- accordion template -->
           <div class="panel-group" type="faq" id="faqAccordion" role="tablist" aria-multiselectable="true">
+
+            </a>
+
+            <h2>Frequently Asked Questions <a href="mailto:corporate-ui@scania.com?subject=Question from Corporate UI FAQ..." class="btn btn-sm btn-primary">Send a Question</a></h2>
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Where can I find specification about Scania Data Access APIs?
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Do you have a plan to move to Bootstrap 4?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                  <p>Please read the following documentation for all the details you want to to know about FMP APIs and Tachograph APIs.
-                    
-                    FMS APIs
-
-                  Tachograph APIs</p>
+                  <p>In parts, Bootstrap 4 is already available. You can read more about what we've added so far <a href="https://scania.github.io/corporate-ui-docs/developer/bootstrap-original-docs.html#bootstrap-4">at the UX Library</a>.</p>
+                  <p>The reasons why we're keeping much of the Bootstrap 3 classes, like for example panels, is that we don't want to force dozens of applications to re-factor their code just to get their hands on some nice Bootstrap 4 features.</p>
+                  <p>In the upcoming Corporate UI 4.0, we've pretty much decoupled the CSS so it will be easier to make your own choice of what framework to use.
                 </div>
               </div>
             </div>
@@ -150,13 +175,13 @@
               <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What is the difference between Scania Data Access User and Scania Developer Portal User?
+                    What's the latest version of Corporate UI, and where can I find any release notes?
                   </a>
                 </h4>
               </div>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
-                  Collapse CONTENT 2
+                  <p>The best way to find out more about the Corporate UI releases is to <a href="https://github.com/scania/corporate-ui/releases/">look in the release section</a> of the Corporate UI GitHub repository. The latest release is also the latest version.</p>
                 </div>
               </div>
             </div>
@@ -164,13 +189,27 @@
               <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    What coding conventions are you using for Corporate UI?
+                    How do I know what Corporate UI version a web page currently is using?
                   </a>
                 </h4>
               </div>
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
-                  <p>We think that it's important to share common standards within a company. Therefore we've done some research and the standards we're using when coding are published here:</p>
+                  <p>When Corporate UI is correctly installed, the version number will be printed on the top of the code in the code inspector. To open the code inspector, press F12 on your keyboard. The corporate-ui-version should now be visible on the second line of code. If you don't see it, press the Elements tab in the new window. Alternatively, the web page does not use Corporate UI.</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What coding conventions are you using for Corporate UI?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  <p>We think that it's important to share common standards within a company. Therefore, we've done some research and the standards we're using when coding is published here:</p>
                   <p><a class="btn-info btn-link" href="https://github.com/scania/coding-conventions/" target="_blank">https://github.com/scania/coding-conventions/</a></p>
                 </div>
               </div>
