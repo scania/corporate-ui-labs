@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <title>UX Library - Extended Tables</title>
+  <script src="https://static.scania.com/vendors/components/pure-js/browser-reject/1.0.0/js/browser-reject.js"></script>
+
+  <script src="https://static.scania.com/build/global/3.5.3/js/corporate-ui.js?monitoring=true"></script>
+
+</head>
+
+<body class="scania app">
+
+
+<style>
+
+
+/* First set the outer border */
+
+    table.table-expandable  {
+      border: 1px solid #dadada;
+    }
+
+
+
+
+/* First Thead in an expandable table needs left and right borders */
+
+    table.table-expandable > thead {
+      border-right: 1px solid #041e42;
+      border-left: 1px solid #041e42;
+    }
+
+
+
+/* No borders between rows in an expandable table */
+
+    table.table-expandable > tbody + tbody  {
+      border-top: none;
+      border-bottom: none;
+    }
+
+    table.table-expandable > tbody + tbody tr td  {
+      border-top: none;
+      border-bottom: none;
+    }    
+
+
+  /* Lets make it striped */
+
+  .table-expandable tbody[data-toggle="collapse"] {
+      background-color: #ebf2f5;
+  }
+
+
+  .table-expandable tbody[data-toggle="collapse"]:nth-child(4n) {
+      background-color: #f9f9f9;
+  }
+
+  /* An expandable row always have an pointer when hovering */
+
+
+
+    /* Let's style the table in the expanded row */
+
+
+    .table-expandable tbody[data-toggle="collapse"] + tbody {
+        background-color: #fff;
+        margin: 5px;
+        margin-bottom: 14px;
+    }
+
+    table.table-expandable tbody[data-toggle="collapse"] > tr {
+        cursor: pointer;
+    }    
+
+    .table-expandable tbody[data-toggle="collapse"] + tbody tr:hover td {
+        background-color: #f3f3f3;
+
+    }
+
+    .table-expandable tbody[data-toggle="collapse"] + tbody > tr > th {
+        background-color: #fff;
+        font-size: 12px;
+        padding: 18px 10px 6px;
+        border-top-color: #0000;
+
+    }
+
+    .table-expandable tbody[data-toggle="collapse"] + tbody > tr > td {
+        background-color: #fff;
+        font-size: 12px;
+        padding: 6px 10px ;
+        border-top-color: #0000;
+
+    }
+
+    .table-expandable tbody[data-toggle="collapse"] + tbody > tr > th:first-child,
+    .table-expandable tbody[data-toggle="collapse"] + tbody > tr > td:first-child {
+        padding-left: 40px;
+
+    }
+
+    .table-expandable tbody[data-toggle="collapse"] + tbody > tr > td.empty {
+        min-height: 30px;
+      
+    }    
+
+/* Setting border around the expanded section */
+
+    table.table-expandable tbody[data-toggle="collapse"]:not(.collapsed) {
+      border: 1px solid #4a8ba4;
+      border-bottom: #4a8ba4;
+      background-color: #d9e8ef;
+    }
+
+    table.table-expandable > tbody[data-toggle="collapse"]:not(.collapsed) + tbody {
+      border-top: none;
+      border-right: 1px solid #4a8ba4;
+      border-bottom: 1px solid #4a8ba4;
+      border-left: 1px solid #4a8ba4;
+    } 
+
+
+/* Styles for the angle-up angle-down icon and animation */
+
+    table.table-expandable tbody[data-toggle="collapse"] > tr > td:first-child:before {
+        content: "\f106";
+        vertical-align: middle;
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        font-size: 20px;
+        color: #041e42;
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;        
+        transform:rotate(0deg);
+        /* Standard */
+        transition: all 0.3s ease;
+        /* Firefox */
+        -moz-transition: all 0.3s ease;
+        /* WebKit */
+        -webkit-transition: all 0.3s ease;
+        /* Opera */
+        -o-transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    table.table-expandable tbody[data-toggle="collapse"].collapsed > tr > td:first-child:before {
+        transform:rotate(180deg);
+    }
+
+/* End styles for the angle-up angle-down icon and animation */    
+
+    /* fix = code from bootstrap 3 */
+    tbody.collapsed.in {
+        display: table-row-group;
+    }
+
+
+
+</style>
+
+
+
+  <table class="table table-expandable">
+      <thead>
+          <tr><th>Column</th><th>Column</th><th>Column</th><th>Column</th></tr>
+      </thead>
+      <tbody class="" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1" data-toggle="collapse">
+          <tr>
+              <td>Jesper</td>
+              <td>data</td>
+              <td>data</td>  
+              <td>data</td>
+          </tr>
+      </tbody>
+      <tbody id="group-of-rows-1" class="collapse in">
+          <tr>
+              <th>child row</th>
+              <th>data 1</th>
+              <th>data 1</th>  
+              <th>data 1</th>
+          </tr>
+          <hr />      
+          <tr>
+              <td>child row</td>
+              <td>data 1</td>
+              <td>data 1</td>  
+              <td>data 1</td>
+          </tr>
+          <tr>
+              <td>child row</td>
+              <td>data 1</td>
+              <td>data 1</td>  
+              <td>data 1</td>
+          </tr>       
+      </tbody>
+      <tbody class="collapsed" data-target="#group-of-rows-2" aria-expanded="false" aria-controls="group-of-rows-2" data-toggle="collapse">
+          <tr>
+              <td>Andreas</td>
+              <td>data</td>
+              <td>data</td>  
+              <td>data</td>
+          </tr>
+      </tbody>
+      <tbody id="group-of-rows-2" class="collapse">
+          <tr>
+              <td colspan="4">
+                <div class="">Adding a div in here and you can do quite much anything.</div>
+              </td>
+          </tr>
+      </tbody>
+      <tbody class="collapsed" data-target="#group-of-rows-3" aria-expanded="false" aria-controls="group-of-rows-3" data-toggle="collapse">
+          <tr>
+              <td>Martin</td>
+              <td>data</td>
+              <td>data</td>  
+              <td>data</td>
+          </tr>
+      </tbody>
+      <tbody id="group-of-rows-3" class="collapse">
+          <tr>
+              <td>child row</td>
+              <td>data 2</td>
+              <td>data 2</td>  
+              <td>data 2</td>
+          </tr>
+          <tr>
+              <td>child row</td>
+              <td>data 2</td>
+              <td>data 2</td>  
+              <td>data 2</td>
+          </tr>
+      </tbody>    
+  </table>
+
+</body>
+</html>
